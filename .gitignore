@@ -7,4 +7,7 @@ nbproject
 .project
 .settings
 composer.lock
-/vendor/ZF2/
+/tests/tests/ZendTest/
+/tests/tests/docs/
+/tests/tests/ZendMUDAKI/
+/tests/docs/
