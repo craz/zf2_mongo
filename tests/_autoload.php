@@ -14,6 +14,8 @@ if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
              Zend\Loader\StandardAutoloader::LOAD_NS => array(
                  'Zend'     => __DIR__ . '/../vendor/ZF2/library/Zend',
                  'ZendTest' => __DIR__ . '/ZendTest',
+                 'App' => __DIR__ . '/../vendor/App/library/Mongo',
+                 'AppTest' => __DIR__ . '/AppTest',
              ),
         ));
     $loader->register();
