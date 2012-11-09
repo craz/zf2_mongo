@@ -28,7 +28,9 @@ if (class_exists('PHPUnit_Runner_Version', true)) {
  * distribution.
  */
 $zfRoot        = realpath(dirname(__DIR__));
-$zfCoreLibrary = "$zfRoot/library";
+$zfCoreLibrary = "$zfRoot/vendor/ZF2/library";
+$zfAppLibrary = "$zfRoot/vendor/App/library";
+/*$zfCoreLibrary = "$zfRoot/library";*/
 $zfCoreTests   = "$zfRoot/tests";
 
 /*
@@ -40,6 +42,7 @@ $zfCoreTests   = "$zfRoot/tests";
 $path = array(
     $zfCoreLibrary,
     $zfCoreTests,
+    $zfAppLibrary,
     get_include_path(),
 );
 set_include_path(implode(PATH_SEPARATOR, $path));
